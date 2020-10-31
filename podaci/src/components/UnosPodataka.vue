@@ -62,6 +62,11 @@
       <b-numberinput v-model="tezina"></b-numberinput>
     </b-field>
 
+    <div class="buttons">
+        <b-button type="is-primary">Potvrdi</b-button>
+        <b-button type="is-danger">Poništi</b-button>
+    </div>
+
     <p>Pregled unesenih podataka</p>
     <button class="button field is-danger" @click="selected = null"
             :disabled="!selected">
@@ -79,7 +84,7 @@
                 </b-table>
             </b-tab-item>
 
-            <b-tab-item label="Selected">
+            <b-tab-item label="Izabrano">
                 <pre>{{ selected }}</pre>
             </b-tab-item>
         </b-tabs>
@@ -107,7 +112,7 @@ export default {
                 { 'id': 2, 'ime': 'Petar', 'prezime': 'Horvatić', 'radio':'Vozač', 'polazak':'Bjelovar', 'odrediste':'Rijeka', 'date': '2016-12-15 06:00:53', 'brosoba': 1, 'cijena': 40.00,'tezina': 0 },
                 { 'id': 3, 'ime': 'Luka', 'prezime': 'Gilbertić', 'radio':'Putnik', 'polazak':'Zagreb', 'odrediste':'Slavonski Brod','date': '2016-04-26 06:26:28', 'brosoba': 2, 'cijena': 100.00,'tezina': 0 },
                 { 'id': 4, 'ime': 'Ines', 'prezime': 'Olić', 'radio':'Paket', 'polazak':'Dubrovnik', 'odrediste':'Zagreb','date': '2016-04-10 10:28:46', 'brosoba': 0, 'cijena': 20.00, 'tezina': 2000},
-                { 'id': 5, 'ime': 'Marko', 'prezime': 'Mesić', 'radio':'Putnik', 'polazak':'Bjelovar', 'odrediste':'Nova Gradiška','date': '2016-12-06 14:38:38', 'brosoba': 1, 'cijena': 20.00, 'tezina': 0}
+                { 'id': 5, 'ime': 'Marko', 'prezime': 'Mesić', 'radio':'Putnik', 'polazak':'Bjelovar', 'odrediste':'Nova Gradiška','date': '2016-12-06 14:38:38', 'brosoba': 1, 'cijena': 20.00, 'tezina': 0},
             ]
 
             return {
@@ -199,5 +204,8 @@ p{
     margin-bottom: 5px;
     font-size: 25px;    
     color: black;
+}
+.buttons{
+    margin-top: 20px;
 }
 </style>
