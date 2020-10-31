@@ -1,4 +1,4 @@
-# pocetno
+# podaci
 
 ## Project setup
 ```
