@@ -196,9 +196,10 @@ export default {
 <style scoped>
 section {
     flex: 1;
-    margin: 50px;
-    padding: 50px;
+    margin: 40px;
+    padding: 40px;
     border: 1px solid #D3D3D3;
+    border-radius: 6px;
 }
 p{
     margin-bottom: 5px;
@@ -207,5 +208,7 @@ p{
 }
 .buttons{
     margin-top: 20px;
+
 }
+
 </style>
