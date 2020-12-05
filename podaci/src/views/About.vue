@@ -1,6 +1,6 @@
 <template>
     <section>
-        <p>Unos podataka</p>
+        <p>Unos podataka</p> <!-- odvoji aka login ?-->
          <b-field label="Unesite Vaše ime:">
             <b-input placeholder="Ime" v-model="name"></b-input>
         </b-field>
@@ -43,7 +43,7 @@
         </b-datetimepicker>
     </b-field>
 
-    <p>Vozač</p>
+    <p>Vozač</p>  <!-- odvoji -->
     <b-field label="Unesite broj putnika:">
       <b-numberinput v-model="brputnik"></b-numberinput>
     </b-field>
@@ -52,12 +52,12 @@
       <b-numberinput v-model="cijena"></b-numberinput>
     </b-field>
 
-    <p>Putnik</p>
+    <p>Putnik</p> <!-- odvoji -->
     <b-field label="Unesite broj putnika:">
       <b-numberinput v-model="brputnik"></b-numberinput>
     </b-field>
 
-    <p>Paket</p>
+    <p>Paket</p> <!-- odvoji -->
     <b-field label="Unesite težinu paketa:">
       <b-numberinput v-model="tezina"></b-numberinput>
     </b-field>
@@ -67,7 +67,7 @@
         <b-button type="is-danger">Poništi</b-button>
     </div>
 
-    <p>Pregled unesenih podataka</p>
+    <p>Pregled unesenih podataka</p> <!-- odvoji -->
     <button class="button field is-danger" @click="selected = null"
             :disabled="!selected">
             <b-icon icon="close"></b-icon>
@@ -93,7 +93,7 @@
 </template>
 
 <script>
-export default {
+export default { // https://jsonplaceholder.typicode.com/users 
     data(){
 
             const min = new Date()
@@ -212,3 +212,4 @@ p{
 }
 
 </style>
+
