@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '@/views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -30,3 +30,10 @@ const router = new VueRouter({
 })
 
 export default router
+
+const app = new Vue({
+  el: '#app',
+  router,
+  render: h => h(App),
+  components: { App }
+})
