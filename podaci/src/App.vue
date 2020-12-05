@@ -9,22 +9,28 @@
 </template>
 
 <script>
-import UnosPodataka from './components/UnosPodataka.vue'
-
-
 
 export default {
-  name: 'App',
-  components: {
-    UnosPodataka
-  },
-  name: 'Home',
-  components: {
-    Home
-  }
+  name: "App"
 }
 </script>
 
-<style>
+<style scoped>
+section {
+    flex: 1;
+    margin: 40px;
+    padding: 40px;
+    border: 1px solid #D3D3D3;
+    border-radius: 6px;
+}
+p{
+    margin-bottom: 5px;
+    font-size: 25px;    
+    color: black;
+}
+.buttons{
+    margin-top: 20px;
+
+}
 
 </style>
